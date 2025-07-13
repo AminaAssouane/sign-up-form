@@ -37,27 +37,82 @@ body {
   color: #333;
 }
 
+/* Form section */
 .form {
   flex: 1;
   background-color: white;
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 form {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
 .form-columns {
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 
 .column {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
+.field label {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.field input {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Submit button */
 .submit {
-  text-align: left;
+  margin-top: 10px;
+}
+
+.submit button {
+  background-color: #596d48;
+  color: white;
+  font-size: 1rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.submit button:hover {
+  background-color: #475837;
+}
+
+/* Login line */
+.login {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.login a {
+  color: #596d48;
+  text-decoration: none;
+  font-weight: bold;
 }
