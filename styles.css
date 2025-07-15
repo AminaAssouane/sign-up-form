@@ -127,7 +127,7 @@ input:invalid {
   border: 1px solid red;
 }
 
-input[type="password"] {
+input[type="password"]:invalid {
   border: 1px solid red;
 }
 

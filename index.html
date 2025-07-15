@@ -38,7 +38,13 @@
               </div>
               <div class="field">
                 <label for="password">PASSWORD</label>
-                <input type="password" id="password" />
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=\[\]{};':&quot;\\|,.<>\/?]).{8,}$"
+                  required
+                />
               </div>
             </div>
 
@@ -53,7 +59,13 @@
               </div>
               <div class="field">
                 <label for="confirm-password">CONFIRM PASSWORD</label>
-                <input type="password" id="confirm-password" />
+                <input
+                  type="password"
+                  id="confirm-password"
+                  name="confirm-password"
+                  pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=\[\]{};':&quot;\\|,.>\/?]).{8,}$"
+                  required
+                />
               </div>
             </div>
           </div>
