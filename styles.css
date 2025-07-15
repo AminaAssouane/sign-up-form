@@ -50,6 +50,15 @@ body {
   height: 130px;
 }
 
+.credit {
+  position: absolute;
+  font-family: sans-serif;
+  color: white;
+  font-size: 12px;
+  top: 650px;
+  left: 150px;
+}
+
 /* Right side container */
 .container {
   display: flex;
